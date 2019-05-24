@@ -1,0 +1,7 @@
+.product-holder{
+    height: 80px;
+    width:80px
+}
+.App-logo-paused {
+    animation-play-state: paused;
+  }
