@@ -458,10 +458,5 @@ class MasterLayout extends React.Component {
             </div>
         );
     }
-}
-
-MasterLayout.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
-
+} 
 export default withStyles(styles)(MasterLayout);

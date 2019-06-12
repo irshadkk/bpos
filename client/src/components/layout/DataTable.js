@@ -37,7 +37,7 @@ class DataTable extends React.Component {
 
             <List  >
                 <ListItem button>
-                    <ListItemText  ><Grid container spacing={2}>
+                    <ListItemText  ><Grid container spacing={8}>
                         {this.props.header.map(header => (
                             <Grid item xs={2}>{header} </Grid>
                         ))}
@@ -45,7 +45,7 @@ class DataTable extends React.Component {
                 </ListItem> <Divider />
                 {this.props.data.map(row => (
                     <ListItem button>
-                        <ListItemText  ><Grid container spacing={2} >
+                        <ListItemText  ><Grid container spacing={8} >
                             {this.props.header.map(header => (
                                 <Grid item xs={2}>{row[header]}</Grid>
                             ))}
@@ -55,7 +55,7 @@ class DataTable extends React.Component {
                 ))}
                 <ListItem button>
                     <ListItemText  >
-                        <Grid container spacing={2}>
+                        <Grid container spacing={8}>
                         
                             <Grid  item  >total </Grid> 
                     <Grid item  >{
@@ -68,10 +68,6 @@ class DataTable extends React.Component {
         );
     }
 }
-
-DataTable.propTypes = {
-    classes: PropTypes.object.isRequired,
-    theme: PropTypes.object.isRequired,
-};
+ 
 
 export default DataTable;

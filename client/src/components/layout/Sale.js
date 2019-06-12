@@ -30,6 +30,7 @@ import InfoIcon from '@material-ui/icons/Info';
 import Grid from '@material-ui/core/Grid';
 import DataTable from './DataTable';
 import Product from './Product';
+import Category from './Category';
 
 
 import AppBar from '@material-ui/core/AppBar';
@@ -45,7 +46,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import './Sale.css';
 import { addToCart, removeFromCart } from '../../redux/Actions';
-import { fetchProducts } from '../../redux/ProductActions';
+import { fetchProducts, fetchCategories } from '../../redux/ProductActions';
 
 
 
@@ -92,36 +93,36 @@ class ProductsList extends React.Component {
     };
 
     componentDidMount() {
-        this.props.dispatch(fetchProducts());
+        this.props.dispatch(fetchProducts(null));
+        this.props.dispatch(fetchCategories());
         // this.props.dispatch(fetchTest());
         
     }
 
 
-    render() {
-        const { error, loading, products } = this.props;
+    render() { 
         
 
-        if (error) {
-            return <div>Error! {error.message}</div>;
+        if (this.props.error) {
+            return <div>Error! {this.props.error.message}</div>;
         }
 
-        if (loading) {
+        if (this.props.loading) {
             return <div>Loading...</div>;
         }
 
         return (
 
             
-            <Grid container spacing={2}>
+            <Grid container spacing={8}>
 
                 <Grid item xs={8}>
-                    <Grid container spacing={2}>
+                    <Grid container spacing={8}>
                         <Grid item xs={12} >
                             <Card style={cardStyle}>
                                 <CardHeader style={cardHeaderStyle} name="Products" />
                                 <CardContent>
-                                    <Product data={products}></Product>
+                                    <Product data={this.props.products}></Product>
 
                                 </CardContent>
                             </Card>
@@ -131,7 +132,7 @@ class ProductsList extends React.Component {
                             <Card style={cardStyle}>
                                 <CardHeader style={cardHeaderStyle} name="Category" />
                                 <CardContent>
-                                    <Product data={products}></Product>
+                                    <Category data={this.props.categories}></Category>
                                 </CardContent>
                             </Card>
                         </Grid>
@@ -157,15 +158,11 @@ class ProductsList extends React.Component {
 
         );
     }
-}
-
-ProductsList.propTypes = {
-    classes: PropTypes.object.isRequired,
-    theme: PropTypes.object.isRequired,
-};
+} 
  
 const mapStateToProps = state => ({
     products: state.productReducer.items,
+    categories: state.productReducer.categories,
     loading: state.productReducer.loading,
     error: state.productReducer.error,
     rows: state.cartreducer.cartItem

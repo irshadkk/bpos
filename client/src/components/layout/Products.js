@@ -44,11 +44,5 @@ class Products extends React.Component {
 
         );
     }
-}
-
-Products.propTypes = {
-    classes: PropTypes.object.isRequired,
-    theme: PropTypes.object.isRequired,
-};
-
+} 
 export default Products;

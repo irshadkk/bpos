@@ -292,9 +292,11 @@ const styles = theme => ({
   },
   gridListTile: {
     maxHeight:  70, 
+    minWidth:  100, 
   },
   gridListTileBar: {
     maxHeight:  15, 
+    minWidth:  70, 
   },
   image: {
     // width: 128,
