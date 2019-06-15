@@ -104,11 +104,11 @@ class ProductsList extends React.Component {
         
 
         if (this.props.error) {
-            return <div>Error! {this.props.error.message}</div>;
+            // return <div>Error! {this.props.error.message}</div>;
         }
 
         if (this.props.loading) {
-            return <div>Loading...</div>;
+            // return <div>Loading...</div>;
         }
 
         return (

@@ -10,7 +10,10 @@ let reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADDTOCART:
             let _state = {}
-            let index = state.cartItem.indexOf(action.payload);
+            let index = state.cartItem.map(function (cartItem) {
+                return cartItem.id;
+            }).indexOf(action.payload.id);
+            // let index = state.cartItem.indexOf(action.payload);
             if (index < 0) {
                 action.payload.qty = 1;
                 action.payload.ttl = (action.payload.price).toFixed(2);
