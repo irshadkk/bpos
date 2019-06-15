@@ -239,7 +239,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
-import Products from './Products';
+import Products from '../inventory/Products';
 import Sale from './Sale';
 import ServerApiTest from './ServerApiTest'
 

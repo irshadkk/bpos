@@ -19,7 +19,7 @@ import TableRow from '@material-ui/core/TableRow';
 import DeleteIcon from '@material-ui/icons/Delete';
 import EditIcon from '@material-ui/icons/Edit';
 import { CardHeader } from '@material-ui/core';
-import DataTable from './DataTable'
+import DataTable from '../layout/DataTable'
 const rows = [
     { id: 1, name: 'Camera', price: 120, tax: 5, stock: 5, action: 'delete' },
     { id: 2, name: 'Tea', price: 100, tax: 4, stock: 4, action: 'delete' },
