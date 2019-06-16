@@ -18,3 +18,8 @@ Run the Mongo daemon, in one of your terminal windows run mongod. This should st
 Run the Mongo shell, with the Mongo daemon running in one terminal, type mongo in another terminal window. This will run the Mongo shell which is an application to access data in MongoDB.
 To exit the Mongo shell run quit()
 To stop the Mongo daemon hit ctrl-c
+
+Mongo DB
+=========
+name of db = bpos
+collections are exprted and can be imported to mongodb
