@@ -1,0 +1,6 @@
+[
+{ "_id" : { "$oid" : "5d014878bcb60f0be94c3360" }, "tax" : 12.0, "id" : 1.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "cat" : "Burger" },
+{ "_id" : { "$oid" : "5d01489bbcb60f0be94c3361" }, "tax" : 13.0, "id" : 2.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "cat" : "Tea" },
+{ "_id" : { "$oid" : "5d0148a9bcb60f0be94c3362" }, "tax" : 10.0, "id" : 3.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "cat" : "Salad" },
+{ "_id" : { "$oid" : "5d0148bcbcb60f0be94c3363" }, "tax" : 5.0, "id" : 4.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "cat" : "Snacks" }
+]

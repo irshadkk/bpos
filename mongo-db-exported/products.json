@@ -1,0 +1,7 @@
+[
+{ "_id" : { "$oid" : "5d0149bcbcb60f0be94c3394" }, "tax" : 12.0, "id" : 1.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "name" : "Burger", "price" : 15.0, "cat" : "Burger" },
+{ "_id" : { "$oid" : "5d0149cbbcb60f0be94c3395" }, "tax" : 13.0, "id" : 2.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "name" : "Tea", "price" : 13.25, "cat" : "Tea" },
+{ "_id" : { "$oid" : "5d0149d5bcb60f0be94c3397" }, "tax" : 10.0, "id" : 3.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "name" : "Salad", "price" : 13.25, "cat" : "Salad" },
+{ "_id" : { "$oid" : "5d0149debcb60f0be94c3398" }, "tax" : 5.0, "id" : 4.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "name" : "Samosa", "price" : 2.0, "cat" : "Snacks" },
+{ "_id" : { "$oid" : "5d06838b52bf330120797aa7" }, "tax" : 1.0, "id" : 6.0, "img" : "https://material-ui.com/static/images/grid-list/burgers.jpg", "name" : "Faseem", "price" : 16.0, "cat" : "Burger" }
+]
